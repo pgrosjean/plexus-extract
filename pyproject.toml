@@ -10,7 +10,7 @@ authors = [
     { name = "Parker Grosjean", email = "parker.grosjean@gmail.com" }
 ]
 license = {text = "MIT"}
-urls = { "Homepage" = "https://github.com/pgrosjean/plexus" }
+urls = { "Homepage" = "https://github.com/pgrosjean/plexus-extract" }
 readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.10"
 dependencies = [
