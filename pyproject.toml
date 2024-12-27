@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.2.2", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plexus-extract"
+version = "0.0.1"
+description = "plexus-extract -- Tools for extracting single cell GCaMP activity traces."
+authors = [
+    { name = "Parker Grosjean", email = "parker.grosjean@gmail.com" }
+]
+license = {text = "MIT"}
+urls = { "Homepage" = "https://github.com/pgrosjean/plexus" }
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.10"
+dependencies = [
+    "cellpose>=3.0.7",
+    "oasis-deconv>=0.2.0",
+    "nd2reader>=3.3.0",
+    "scikit-image>=0.22.0",
+    "matplotlib>=3.8.0",
+    "seaborn>=0.13.2",
+    "tqdm>=4.66.1",
+    "zarr>=2.16.1",
+    "scipy==1.14.1",
+    "wandb>=0.19.1",
+]
+[project.entry-points.console_scripts]
+plexus-extract = "plexus_extract.extraction.extract:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
