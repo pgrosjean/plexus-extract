@@ -2,12 +2,25 @@
 **Overview**: Tools for extracting neuronal activity timeseries from microscopy videos. Generates Zarr files from .nd2 file containing videos.
 If interested in expanding the usage to other file types other than Nikon nd2 files you will need to update the ND2Video and ND2Image classes.
 
+# Installation
+```bash
+git clone https://github.com/pgrosjean/plexus-extract.git
+cd plexus-extract
+bash setup_mamba.sh
+conda activate plexus_extract
+pip install -e .
+```
+
+# Hardware Specifications
+Requires at least one NVIDIA GPU with at least 24 Gb memory for deep learning segmentation with CellPose.
+
 # Usage (CLI)
 ### Viewing the flags for plexus-extract
 ```bash
 # view the flags for plexus-extract
 plexus-extract --help
 ```
+
 ### Example Usage
 ```bash
 # Extraction where there are video and nuclei image nd2 files (used for telling if CRISPRi guides were delivered)
