@@ -1,4 +1,6 @@
 # plexus-extract
+[![DOI](https://zenodo.org/badge/909128914.svg)](https://doi.org/10.5281/zenodo.15811337)
+
 **Overview**: Tools for extracting neuronal activity timeseries from microscopy videos. Generates Zarr files from .nd2 file containing videos.
 If interested in expanding the usage to other file types other than Nikon nd2 files you will need to update the ND2Video and ND2Image classes.
 
